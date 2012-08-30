@@ -15,7 +15,13 @@
         </ul></div><!-- end main-menu -->
     </div> <!-- /#header -->
   </div><!--end header-top-->
-  <div id="static-content"> Text with images</div><!-- static content -->
+  <div id="static-content"> Text with images
+    <% @images.each do |image| %>
+        <%= image %>
+    <% end %>
+  </div><!-- static content -->
+
+
   <div id="content-body">
     <div id="main">
       <div class="region region-content">
