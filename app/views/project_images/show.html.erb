@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @project_image.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @project_image.description %>
+</p>
+
+<%= image_tag @project_image.event_image.url %>
+
+<%= link_to 'Edit', edit_project_image_path(@project_image) %> |
+<%= link_to 'Back', project_images_path %>
