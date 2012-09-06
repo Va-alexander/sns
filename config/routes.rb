@@ -1,5 +1,7 @@
 Sns::Application.routes.draw do
   
+  resources :projects
+
   resources :project_images
 
   root :to => 'home#index'
