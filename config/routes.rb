@@ -1,5 +1,7 @@
 Sns::Application.routes.draw do
   
+  resources :project_images
+
   root :to => 'home#index'
 
   # The priority is based upon order of creation:
