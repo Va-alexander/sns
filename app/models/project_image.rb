@@ -1,6 +1,7 @@
-class ProjectImage < ActiveRecord::Base
-  attr_accessible :description, :name, :event_image
+class ProjectImage < ActiveRecord::Base 
+	belongs_to :project
 
+  attr_accessible :description, :name, :event_image
 
    has_attached_file :event_image, :styles => { :thumb => "312x260" },
    									:default_style => :thumb,
