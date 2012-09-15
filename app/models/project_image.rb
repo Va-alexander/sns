@@ -9,6 +9,6 @@ class ProjectImage < ActiveRecord::Base
    :path => ":rails_root/public/assets/products/:id/:style/:basename.:extension"
    
    validates_attachment :event_image, :presence => true,
-   :content_type => {:content_type => ["image/jpg" ,"image/png"]},
+   :content_type => {:content_type => ["image/jpeg", "image/jpg", "image/png"]},
    :size => {:in => 0..5000.kilobytes}
 end
