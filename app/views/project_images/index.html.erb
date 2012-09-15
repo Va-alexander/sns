@@ -1,6 +1,6 @@
 <h1>Listing project_images</h1>
 
-<table>
+<!-- <table>
   <tr>
     <th>Name</th>
     <th>Description</th>
@@ -19,8 +19,10 @@
     <td><%= link_to 'Destroy', project_image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
-</table>
-
+</table> -->
+<% @project_images.each do |project_image| %>
+<% render :partial => 'index', :locals => { :project_image => @project_image}%>
+<% end %>
 <br />
 
 <%= link_to 'New Project image', new_project_image_path %>

@@ -1,2 +1,13 @@
-<div>Home page</div>
-<%= link_to 'Project Image', project_images_path %>
+<% content_for :title do %>
+	Домашняя
+<% end %>
+
+<% content_for :mainMenu do %>
+	<% render 'menu' %>
+<% end %>
+
+
+<h2 class="title" name="Портфолио">Портфолио</h2>
+<div id="PortfolioWrapper">
+	
+</div>
