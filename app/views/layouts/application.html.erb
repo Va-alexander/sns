@@ -2,15 +2,38 @@
 <html>
 <head>
   <title>СНС Ивент | <%= yield :title %></title>
+  <meta name="description" content="Home" />
+	<meta name="keywords" content="" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div id="wrapper">
-	<%= yield :mainMenu %>
-
-<%= yield %>
-</div>
+	<!--Page Wrapper-->
+	<div id="pageWrapper">
+		<!--Header Wrapper-->
+		<div id="headerWrapper">
+			<!--Logo Section-->
+			<div id="logo"> 
+				SNS EVENT
+			</div>
+			<!--Main Menu-->
+      <div id="main-menu">
+        <%= yield :mainMenu %>
+      </div>
+    </div>
+			<!--Center Part-->
+    	<div id="main">
+	      <!--Content Area-->
+	      <div class="content">
+	        <!--Head Line-->
+	        <div id="static-content">
+	          <h3>Ивенты &amp; Жизнь</h3>
+        </div>
+        	<%= yield %>
+				</div>
+			</div>
+	</div>
 </body>
 </html>

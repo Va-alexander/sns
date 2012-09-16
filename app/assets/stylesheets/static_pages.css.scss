@@ -293,15 +293,15 @@ h2.title a{
 
 /* Layout
 ------------------------------------------------*/
-#wrapper {
+#pageWrapper {
   margin: 0 auto;
   padding: 0;
   width: 980px;
 }
 
-/* Header Top
+/* Header Wrapper
 ------------------------------------------------*/
-#header-top {
+#headerWrapper {
   background-size: 160px;
   background: white;
   float: left;
@@ -314,22 +314,22 @@ h2.title a{
 }
 
 /* logo deleted margin top*/
-#header-top #logo {
+#headerWrapper #logo {
   float: left;
   width: 300px;
 }
-#header-top #site-slogan {
+#headerWrapper #site-slogan {
   margin: 0;
   color: #959595;
   text-shadow: 1px 1px #fff;
 }
-#header-top .search-box{
+#headerWrapper .search-box{
   float: right;
   padding: 0;
   margin: 0;
   margin-top: 22px;
 }
-#header-top .search-box .form-text{
+#headerWrapper .search-box .form-text{
   color: #a7a7a7;
   width: 160px;
   height: 22px;
@@ -337,7 +337,7 @@ h2.title a{
   padding: 2px 0px 2px 24px;
   border-radius: 0;
 }
-#header-top .search-box .form-submit{
+#headerWrapper .search-box .form-submit{
   background: #767676;
   margin: 0;
   border-radius: 0;
@@ -345,7 +345,7 @@ h2.title a{
   text-shadow: none;
   padding: 4px 7px;
 }
-#header-top .search-box .form-submit:hover{
+#headerWrapper .search-box .form-submit:hover{
   background: #676767;
 }
 /* social - deleted margin top*/

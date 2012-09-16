@@ -2,13 +2,13 @@
 
 
 
+
 <% @project_images.each do |project_image| %>
-  <div class="portfolio-image"><%= image_tag project_image.event_image.url %></div>
-  <div><%= link_to 'Show', project_image %></div>
+  <%= render :partial => 'index', :locals => { :project_image => project_image} %>
+  <!-- <div><%= link_to 'Show', project_image %></div>
   <div><%= link_to 'Edit', edit_project_image_path(project_image) %></div>
-  <div><%= link_to 'Destroy', project_image, method: :delete, data: { confirm: 'Are you sure?' } %></div>  
+  <div><%= link_to 'Destroy', project_image, method: :delete, data: { confirm: 'Are you sure?' } %></div>   -->
 <% end %>
-</table> 
 
 <br />
 
