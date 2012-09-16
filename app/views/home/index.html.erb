@@ -8,14 +8,9 @@
 
 
 <h2 class="title" name="Портфолио">Портфолио</h2>
-<div id="PortfolioWrapper">
-  <h1>Listing project_images</h1>
-
+<div id="PortfolioWrapper" style="clear:both">
   <% ProjectImage.all.each do |project_image| %>
-    <div class="portfolio-image"><%= image_tag project_image.event_image.url %></div>
+    <div class="portfolio-image-holder"><%= image_tag project_image.event_image.url(:thumb) %></div>
   <% end %>
-
-  <br />
-
   <%= link_to 'New Project image', new_project_image_path %>
 </div>
