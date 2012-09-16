@@ -1,13 +1,6 @@
 class ProjectImagesController < ApplicationController
-  # GET /project_images
-  # GET /project_images.json
   def index
     @project_images = ProjectImage.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @project_images }
-    end
   end
 
   # GET /project_images/1
