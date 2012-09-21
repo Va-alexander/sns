@@ -8,6 +8,7 @@
     <!--Head Line-->
     <div id="static-content">
       <h2>Ивенты &amp; Жизнь</h2>
+      <!-- Longer page -->
         <% for i in 1..5 do %>
           <ul>IMAGE</ul>
         <% end %>               
@@ -18,7 +19,33 @@
 		    <div class="portfolio-image-holder"><%= image_tag project_image.event_image.url(:thumb) %></div>
 		  <% end %>
 		  <%= link_to 'New Project image', new_project_image_path %>
+       <!-- Longer page -->
+       <% for i in 1..12 do %>
+          <ul>IMAGE</ul>
+        <% end %>
 		</div>
+    <h2 class="title" name="Клиенты">Клиенты</h2>
+    <div id="ClientsWrapper">
+       <!-- Longer page -->
+       <% for i in 1..12 do %>
+          <ul>IMAGE</ul>
+        <% end %>
+    </div>
+    <h2 class="title" name="О%20Нас">О Нас</h2>
+    <div id="AboutWrapper">
+       <!-- Longer page -->
+       <% for i in 1..12 do %>
+          <ul>IMAGE</ul>
+        <% end %>
+    </div>
+    <div id="ContactsWrapper">
+    <h2 id="ContactsTitle" name="Контакты">Контакты</h2>
+    
+       <!-- Longer page -->
+       <% for i in 1..12 do %>
+          <ul>IMAGE</ul>
+        <% end %>
+    </div>
   </div>
 </div>
 

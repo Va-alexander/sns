@@ -378,3 +378,31 @@ h2.title a{
   display: inline;
   margin-right: 10px;
 }
+
+#ContactsTitle{
+  width: 968px;
+  font-size: 32px;
+  letter-spacing: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-family: arial, helvetica, sans-serif;
+}
+
+#ContactsTitle{
+  width: 968px;
+  font-size: 32px;
+  letter-spacing: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-family: arial, helvetica, sans-serif;
+}
+
+#ContactsWrapper {
+  float: left;
+  color: #fff;
+  background: #333333;
+}
