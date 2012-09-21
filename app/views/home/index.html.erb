@@ -1,16 +1,24 @@
 <% content_for :title do %>
   Домашняя
 <% end %>
-
-<% content_for :mainMenu do %>
-	<% render 'menu' %>
-<% end %>
-
-
-<h2 class="title" name="Портфолио">Портфолио</h2>
-<div id="PortfolioWrapper" style="clear:both">
-  <% ProjectImage.all.each do |project_image| %>
-    <div class="portfolio-image-holder"><%= image_tag project_image.event_image.url(:thumb) %></div>
-  <% end %>
-  <%= link_to 'New Project image', new_project_image_path %>
+<!--Center Part-->
+<div id="main">
+  <!--Content Area-->
+  <div id="content-body">
+    <!--Head Line-->
+    <div id="static-content">
+      <h2>Ивенты &amp; Жизнь</h2>
+        <% for i in 1..5 do %>
+          <ul>IMAGE</ul>
+        <% end %>               
+  </div>
+    <h2 class="title" name="Портфолио">Портфолио</h2>
+		<div id="PortfolioWrapper" style="clear:both">
+			<% ProjectImage.all.each do |project_image| %>
+		    <div class="portfolio-image-holder"><%= image_tag project_image.event_image.url(:thumb) %></div>
+		  <% end %>
+		  <%= link_to 'New Project image', new_project_image_path %>
+		</div>
+  </div>
 </div>
+
