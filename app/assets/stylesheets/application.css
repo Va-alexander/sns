@@ -240,9 +240,18 @@ select {
 }
 
 .underline-title {
-  width: 977px;
+  width: 970px;
   text-align: center;
   color: #B3B3B3;
+  font-size: 15px;
+  letter-spacing: -3px;
+  padding: 0 0 20px 0;
+}
+
+#underline-title-contacts {
+  width: 970px;
+  text-align: center;
+  color: #fff;
   font-size: 15px;
   letter-spacing: -3px;
   padding: 0 0 20px 0;
@@ -299,7 +308,7 @@ h2.title a{
   text-align: center;
   text-transform: uppercase;
   color: rgb(102, 102, 102);
-  padding: 200px 0 0 0;
+  padding: 80px 0 0 0;
 }
 
 
@@ -321,87 +330,43 @@ h2.title a{
 /* Header Wrapper
 ------------------------------------------------*/
 #headerWrapper {
-  background-size: 160px;
+  background-size: 54px;
   background: white;
   float: left;
   position: fixed;
   margin: 0 auto;
   padding: 0 0 0 0;
   width: 980px;
-  height: 160px;
+  height: 54px;
 /*z-index: 999;*/
 }
 
-/* logo deleted margin top*/
 #headerWrapper #logo {
   float: left;
   width: 300px;
 }
-#headerWrapper #site-slogan {
-  margin: 0;
-  color: #959595;
-  text-shadow: 1px 1px #fff;
-}
-#headerWrapper .search-box{
-  float: right;
-  padding: 0;
-  margin: 0;
-  margin-top: 22px;
-}
-#headerWrapper .search-box .form-text{
-  color: #a7a7a7;
-  width: 160px;
-  height: 22px;
-  background: #fff url(images/search.png) no-repeat 3px 4px;
-  padding: 2px 0px 2px 24px;
-  border-radius: 0;
-}
-#headerWrapper .search-box .form-submit{
-  background: #767676;
-  margin: 0;
-  border-radius: 0;
+
+#ContactsTitle{
+  padding-top: 15px;
+  width: 968px;
+  font-size: 32px;
+  letter-spacing: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
   color: #fff;
-  text-shadow: none;
-  padding: 4px 7px;
+  text-align: center;
+  font-family: arial, helvetica, sans-serif;
 }
-#headerWrapper .search-box .form-submit:hover{
-  background: #676767;
-}
-/* social - deleted margin top*/
-#header-social {
-  float: right;
-  padding: 0;
-}
-#header-social li{
+
+#PortfolioWrapper {
+  width: 990px;
   float: left;
-  list-style: none;
-  display: inline;
-  margin-right: 10px;
-}
-
-#ContactsTitle{
-  width: 968px;
-  font-size: 32px;
-  letter-spacing: 6px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
-  font-family: arial, helvetica, sans-serif;
-}
-
-#ContactsTitle{
-  width: 968px;
-  font-size: 32px;
-  letter-spacing: 6px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
-  font-family: arial, helvetica, sans-serif;
 }
 
 #ContactsWrapper {
+  width: 980px;
+  padding: 0;
+  margin: 0 0 0 -1px;
   float: left;
   color: #fff;
   background: #333333;

@@ -10,10 +10,11 @@
       <h2>Ивенты &amp; Жизнь</h2>
       <!-- Longer page -->
         <% for i in 1..5 do %>
-          <ul>IMAGE</ul>
+          <ul>Lorem Ipsum</ul>
         <% end %>               
   </div>
     <h2 class="title" name="Портфолио">Портфолио</h2>
+    <div class="underline-title"> ---------------------------------------- </div>
 		<div id="PortfolioWrapper" style="clear:both">
 			<% ProjectImage.all.each do |project_image| %>
 		    <div class="portfolio-image-holder"><%= image_tag project_image.event_image.url(:thumb) %></div>
@@ -21,29 +22,39 @@
 		  <%= link_to 'New Project image', new_project_image_path %>
        <!-- Longer page -->
        <% for i in 1..12 do %>
-          <ul>IMAGE</ul>
+          <ul>Lorem Ipsum</ul>
         <% end %>
 		</div>
     <h2 class="title" name="Клиенты">Клиенты</h2>
+    <div class="underline-title"> ---------------------------------------- </div>
     <div id="ClientsWrapper">
        <!-- Longer page -->
        <% for i in 1..12 do %>
-          <ul>IMAGE</ul>
+          <ul>Lorem Ipsum</ul>
         <% end %>
     </div>
     <h2 class="title" name="О%20Нас">О Нас</h2>
+    <div class="underline-title"> ---------------------------------------- </div>
     <div id="AboutWrapper">
        <!-- Longer page -->
        <% for i in 1..12 do %>
-          <ul>IMAGE</ul>
+          <ul>Lorem Ipsum</ul>
+        <% end %>
+    </div>
+    <h2 class="title" name="Услуги">Услуги</h2>
+    <div class="underline-title"> ---------------------------------------- </div>
+    <div id="AboutWrapper">
+       <!-- Longer page -->
+       <% for i in 1..12 do %>
+          <ul>Lorem Ipsum</ul>
         <% end %>
     </div>
     <div id="ContactsWrapper">
     <h2 id="ContactsTitle" name="Контакты">Контакты</h2>
-    
+    <div id="underline-title-contacts"> ---------------------------------------- </div>
        <!-- Longer page -->
-       <% for i in 1..12 do %>
-          <ul>IMAGE</ul>
+       <% for i in 1..125 do %>
+          <ul>Lorem Ipsum</ul>
         <% end %>
     </div>
   </div>
