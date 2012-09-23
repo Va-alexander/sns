@@ -1,0 +1,32 @@
+<%= form_for message, :url => contact_path do |form| %>
+    <div id="message">
+      <div class="leftside">
+        <ul>
+          <li>
+            <%= form.label 'Имя' %>
+            <%= form.text_field :name %>
+          </li>
+          <li>
+            <%= form.label 'Электронный адрес' %>
+            <%= form.text_field :email %>
+          </li>
+          <li>
+            <%= form.label 'Тема' %>
+            <%= form.text_field :subject %>
+          </li>
+        </ul>
+      </div>
+    
+    <div class="rightside">
+      <ul>
+        <li>
+          <%= form.label 'Сообщение' %>
+          <%= form.text_area :body %>
+        </li>
+        <li>
+          <%= form.submit "Отправить" %>
+        </li>
+      </ul>
+    </div>  
+</div>
+<% end %>
