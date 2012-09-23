@@ -10,6 +10,8 @@
   <%= @project_image.description %>
 </p>
 
+<%= @project_image.project %>
+
 <%= image_tag @project_image.event_image.url %>
 
 <%= link_to 'Edit', edit_project_image_path(@project_image) %> |
