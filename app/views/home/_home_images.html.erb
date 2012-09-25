@@ -1,0 +1,13 @@
+<% div_counter = 0 %>
+<% ProjectImage.all.each do |project_image| %>
+  <% div_counter += 1 %>
+  <% div_counter = 1 if div_counter > 3 %>
+  <% case div_counter %>
+  <% when 1 %>
+    <div class="portfolio-image-holder portfolio-image-left"> <%= image_tag project_image.event_image.url(:thumb) %></div>
+  <% when 2 %>
+    <div class="portfolio-image-holder portfolio-image-center"> <%= image_tag project_image.event_image.url(:thumb) %></div>
+  <% when 3 %>
+    <div class="portfolio-image-holder portfolio-image-right"> <%= image_tag project_image.event_image.url(:thumb) %></div>
+  <% end %>
+<% end %>

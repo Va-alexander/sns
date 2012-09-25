@@ -259,16 +259,15 @@ select {
   float: left;
   width: 312px;
   height: 260px;
-  padding: 0 10px 0 0;
 }
 .portfolio-image-left {
-  padding: 0 0 0 0;
+  padding: 10px 10px 10px 0;
 }
 .portfolio-image-center {
-  padding: 0 0 0 0;
+  padding: 10px 10px 10px 10px;
 }
 .portfolio-image-right {
-  padding: 0 0 0 0;
+  padding: 10px 0 10px 10px;
 }
 /**
 titles to center
