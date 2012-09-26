@@ -15,3 +15,4 @@ gem 'jquery-rails'
 gem "paperclip", "~> 3.0"
 gem 'simple-navigation'
 gem 'activeadmin'
+gem 'globalize3'

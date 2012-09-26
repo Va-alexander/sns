@@ -14,6 +14,11 @@
   <div id="pageWrapper">
     <!--Header Wrapper-->
     <div id="headerWrapper">
+      <div id="locales">
+        <%= link_to_unless_current "English", locale: "en" %>
+        <%= link_to_unless_current "Russian", locale: "ru" %>
+        <%= link_to_unless_current "Ukrainian", locale: "uk" %>
+      </div>
       <!--Logo Section-->
       <div id="logo"> 
         <%= link_to 'SNS EVENT', root_path %>

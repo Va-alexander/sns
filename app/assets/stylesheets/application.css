@@ -176,6 +176,11 @@ select {
   height:53px;
 }
 
+/* Locales */
+#locales {
+  float: right;
+}
+
 /* content body (sidebars and main content)
 ------------------------------------------------*/
 #content-body {
