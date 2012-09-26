@@ -211,7 +211,7 @@ select {
   float: left;
   position: relative;
   width: 980px;
-/* z-index: 2000;  */
+  z-index: 20;  
   background: #333333;
   line-height: 34px;
 }
@@ -302,6 +302,7 @@ h2.title a{
 }
 
 #static-content {
+
   text-align: center;
   text-transform: uppercase;
   color: rgb(102, 102, 102);
@@ -333,7 +334,7 @@ h2.title a{
   padding: 0 0 0 0;
   width: 980px;
   height: 54px;
-/*z-index: 999;*/
+  z-index: 20;
 }
 
 #headerWrapper #logo {
@@ -388,7 +389,7 @@ input, textarea{
   width:98%; 
   background:#ccc; 
   border: none; 
-  padding:5px 5px 5px 5px; 
+  padding: 5px 5px 5px 5px; 
   color: #333333;
   border-top: solid 1px #929292; 
   border-right: solid 1px #929292; 

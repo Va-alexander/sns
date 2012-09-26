@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '~>3.2.1'
 
+#gem 'pg'
 gem 'sqlite3'
 
 group :assets do
@@ -13,3 +14,4 @@ end
 gem 'jquery-rails'
 gem "paperclip", "~> 3.0"
 gem 'simple-navigation'
+gem 'activeadmin'

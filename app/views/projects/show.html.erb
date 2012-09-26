@@ -4,15 +4,15 @@
 
 <div id="leftContent"> 
   <div id="clientLogo"> 
-
+  	<%= image_tag @project.logo.url %>
   </div>
   <div id="clientDescription"> 
-    
+  	<%= @project.description %>
   </div>
 </div>
 <div id="rightContent"> 
   <div id="clientPicture"> 
-
+  	<%= image_tag @project.photo.url %>
   </div>
 </div>
 
