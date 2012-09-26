@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120926192000) do
+ActiveRecord::Schema.define(:version => 20120926194925) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -46,6 +46,18 @@ ActiveRecord::Schema.define(:version => 20120926192000) do
   add_index "admin_users", ["email"], :name => "index_admin_users_on_email", :unique => true
   add_index "admin_users", ["reset_password_token"], :name => "index_admin_users_on_reset_password_token", :unique => true
 
+  create_table "project_image_translations", :force => true do |t|
+    t.integer  "project_image_id"
+    t.string   "locale"
+    t.string   "name"
+    t.string   "description"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
+
+  add_index "project_image_translations", ["locale"], :name => "index_project_image_translations_on_locale"
+  add_index "project_image_translations", ["project_image_id"], :name => "index_b221bf33352c5b75b7ce7dda7815113c96fb1d25"
+
   create_table "project_images", :force => true do |t|
     t.string   "name"
     t.string   "description"
@@ -59,6 +71,18 @@ ActiveRecord::Schema.define(:version => 20120926192000) do
   end
 
   add_index "project_images", ["project_id"], :name => "index_project_images_on_project_id"
+
+  create_table "project_translations", :force => true do |t|
+    t.integer  "project_id"
+    t.string   "locale"
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "project_translations", ["locale"], :name => "index_project_translations_on_locale"
+  add_index "project_translations", ["project_id"], :name => "index_project_translations_on_project_id"
 
   create_table "projects", :force => true do |t|
     t.string   "name"

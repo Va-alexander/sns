@@ -3,6 +3,8 @@ class Project < ActiveRecord::Base
 
   attr_accessible :description, :name, :logo, :photo
 
+  translates :name, :description
+
   has_attached_file :logo, :url  => "/assets/projects/:id/:style/:basename.:extension",
   :ProjectImageth => ":rails_root/public/assets/projects/:id/:style/:basename.:extension"
 
