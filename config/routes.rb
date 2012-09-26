@@ -4,11 +4,14 @@ Sns::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
-  resources :projects
+  scope ":locale", locale: /#{I18n.available_locales.join("|")}/ do
+    resources :projects
+    resources :project_images
+    root to: 'home#index'
+  end
 
-  resources :project_images
-
-  root :to => 'home#index'
+  match "*path", to: redirect("/#{I18n.default_locale}/%{path}")
+  match "", to: redirect("/#{I18n.default_locale}")
 
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post
