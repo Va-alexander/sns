@@ -1,6 +1,8 @@
 <% content_for :title do %>
   Домашняя
 <% end %>
+
+<% language = t 'menu.items'  %>
 <!--Center Part-->
 <div id="main">
   <!--Content Area-->
@@ -10,7 +12,7 @@
       <h2>Ивенты &amp; Жизнь</h2>
       <%= render 'anim_circles'%> 
   </div>
-    <h2 class="title"><a name="Portfolio">Портфолио</a></h2>
+    <h2 class="title"><a name="<%= language[0] %>"><%= "#{language[0]}" %></a></h2>
     <div class="underline-title"> ---------------------------------------- </div>
     <div id="PortfolioWrapper" style="clear:both">
       <%= render 'home_images'%>
@@ -20,7 +22,7 @@
           <ul>Lorem Ipsum</ul>
         <% end %>
 		</div>
-    <h2 class="title" ><a name="Clients">Клиенты</a></h2>
+    <h2 class="title" ><a name="<%= language[1] %>"><%= "#{language[1]}" %></a></h2>
     <div class="underline-title"> ---------------------------------------- </div>
     <div id="ClientsWrapper">
        <!-- Longer page -->
@@ -28,7 +30,7 @@
           <ul>Lorem Ipsum</ul>
         <% end %>
     </div>
-    <h2 class="title"><a name="About">О Нас</a></h2>
+    <h2 class="title"><a name="<%= language[2] %>"><%= "#{language[2]}" %></a></h2>
     <div class="underline-title"> ---------------------------------------- </div>
     <div id="AboutWrapper">
        <!-- Longer page -->
@@ -36,7 +38,7 @@
           <ul>Lorem Ipsum</ul>
         <% end %>
     </div>
-    <h2 class="title"><a name="Services">Услуги</a></h2>
+    <h2 class="title"><a name="<%= language[3] %>"><%= "#{language[3]}" %></a></h2>
     <div class="underline-title"> ---------------------------------------- </div>
     <div id="ServicesWrapper">
        <!-- Longer page -->
@@ -45,10 +47,10 @@
         <% end %>
     </div>
     <div id="ContactsWrapper">
-    <h2 id="ContactsTitle"><a name="Contacts">Контакты</a></h2>
+    <h2 id="ContactsTitle"><a name="<%= language[4] %>"><%= "#{language[4]}" %></a></h2>
     <div id="underline-title-contacts"> ---------------------------------------- </div>
     <!-- Here will be contacts :) -->
-    <div id="sendMessage">Оставьте нам сообщение</div>
+    <div id="sendMessage"><%= t 'send_us_message' %></div>
        <%= render :partial => '/contact/new', :locals => {:message => Message.new } %>
     </div>
   </div>

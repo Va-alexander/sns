@@ -1,4 +1,12 @@
 en:
+  send_us_message: "Send Us a Message"
+  menu:
+    items:
+    - Portfolio
+    - Clients
+    - About
+    - Services
+    - Contacts
   date:
     abbr_day_names:
     - Sun
