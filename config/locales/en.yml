@@ -1,9 +1,17 @@
 en:
+  pre_portfolio: "Events & Life"
   send_us_message: "Send Us a Message"
+  message:
+    names:
+    - Name
+    - Email
+    - Subject
+    - Message
+    - Send
   menu:
     items:
     - Portfolio
-    - Clients
+    #- Clients
     - About
     - Services
     - Contacts

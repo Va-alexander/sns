@@ -3,7 +3,6 @@
 		<% n = t 'menu.items'  %>
 		<% n.each do |item| %>
 		  <li><%= link_to "#{item}", root_path(anchor: "#{item}") %></li>
-		<% end %>
-  
+		<% end %>  
 	</ul>
 </div>
