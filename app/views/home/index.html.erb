@@ -1,5 +1,5 @@
 <% content_for :title do %>
-  Домашняя
+  <%= t 'post_title' %>
 <% end %>
 
 <% translated_title = t 'menu.items'  %>
@@ -30,19 +30,35 @@
 
     <h2 class="title"><a name="<%= translated_title[1] %>"><%= "#{translated_title[1]}" %></a></h2>
     <div class="underline-title"> ---------------------------------------- </div>
-    <div id="AboutWrapper">
+    <div id="AboutWrapper" class="ContentBorder">
+       <div class="left">
        <!-- Longer page -->
        <% for i in 1..12 do %>
           <ul>Lorem Ipsum</ul>
         <% end %>
+      </div>
+      <div class="right">
+       <!-- Longer page -->
+       <% for i in 1..12 do %>
+          <ul>Lorem Ipsum</ul>
+        <% end %>
+      </div>
     </div>
     <h2 class="title"><a name="<%= translated_title[2] %>"><%= "#{translated_title[2]}" %></a></h2>
     <div class="underline-title"> ---------------------------------------- </div>
-    <div id="ServicesWrapper">
+    <div id="ServicesWrapper" class="ContentBorder">
+      <div class="left">
        <!-- Longer page -->
        <% for i in 1..12 do %>
           <ul>Lorem Ipsum</ul>
         <% end %>
+      </div>
+      <div class="right">
+       <!-- Longer page -->
+       <% for i in 1..12 do %>
+          <ul>Lorem Ipsum</ul>
+        <% end %>
+      </div>
     </div>
     <div id="ContactsWrapper">
     <h2 id="ContactsTitle"><a name="<%= translated_title[3] %>"><%= "#{translated_title[3]}" %></a></h2>

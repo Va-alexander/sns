@@ -188,7 +188,7 @@ select {
   background: white;
   width: 977px;
   padding: 0;
-  border: 1px solid #dbdbdb;
+  /*border: 1px solid #dbdbdb;*/
 }
 /* main post content
 ------------------------------------------------*/
@@ -362,6 +362,34 @@ h2.title a{
 #PortfolioWrapper {
   width: 990px;
   float: left;
+}
+
+#AboutWrapper {
+
+}
+.ContentBorder {
+  border-top: solid 1px #b3b3b3;
+  border-bottom: solid 1px #b3b3b3;
+  border-left: solid 1px #d9d9d9; 
+  border-right: solid 1px #d9d9d9;
+  width:946px;
+  float:left;
+  padding:15px;
+  margin:0 0 18px 0;
+}
+
+.ContentBorder .right {
+  width:300px;
+  float:right;
+  border-left: solid 1px #b3b3b3;
+  padding:0 25px 0 40px;
+  min-height:300px;
+}
+.ContentBorder .left {
+  width:460px;
+  float:left;
+  margin-right:10px;
+  padding:0 45px 0 15px;
 }
 
 #ContactsWrapper {

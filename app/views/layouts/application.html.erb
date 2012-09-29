@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>СНС Ивент | <%= yield :title %></title>
+  <title><%= t 'pre_title'%> | <%= yield :title %></title>
   <meta name="description" content="Home" />
   <meta name="keywords" content="" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -16,8 +16,8 @@
     <div id="headerWrapper">
       <div id="locales">
         <%= link_to_unless_current "English", locale: "en" %>
-        <%= link_to_unless_current "Russian", locale: "ru" %>
-        <%= link_to_unless_current "Ukrainian", locale: "uk" %>
+        <%= link_to_unless_current "Русский", locale: "ru" %>
+        <%= link_to_unless_current "Українська", locale: "uk" %>
       </div>
       <!--Logo Section-->
       <div id="logo"> 
