@@ -3,7 +3,7 @@ class ProjectImage < ActiveRecord::Base
 
   attr_accessible :description, :name, :event_image
 
-  #translates :name, :description
+  translates :name, :description
 
  has_attached_file :event_image, :styles => { :thumb => "312x260" },
  :default_style => :thumb,
