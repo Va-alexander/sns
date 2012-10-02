@@ -21,8 +21,6 @@ development:
   encoding: unicode
   database: sns_development
   pool: 5
-  username: alex
-  password:
 
   test:
   adapter: postgresql
