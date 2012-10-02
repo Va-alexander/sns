@@ -1,5 +1,5 @@
 class Project < ActiveRecord::Base
-  has_many :project_image
+  has_many :project_images
 
   attr_accessible :description, :name, :logo, :photo
 
