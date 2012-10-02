@@ -14,7 +14,7 @@ Sns::Application.routes.draw do
   match "", to: redirect("/#{I18n.default_locale}")
 
   match 'contact' => 'contact#new', as: 'contact', via: :get
-  match 'contact' => 'contact#create', as: 'contact', via: :post
+  match 'contact' => 'contact#create', to: redirect("/"), as: 'contact', via: :post
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
