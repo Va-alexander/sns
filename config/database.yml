@@ -29,3 +29,11 @@ development:
   pool: 5
   username: alex
   password:
+
+  production:
+  adapter: postgresql
+  encoding: unicode
+  database: sns_production
+  pool: 5
+  username: alex
+  password:
