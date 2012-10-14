@@ -6,7 +6,7 @@ class Project < ActiveRecord::Base
   translates :name, :description
 
   has_attached_file :logo, :url  => "/assets/projects/:id/:style/:basename.:extension",
-  :ProjectImageth => ":rails_root/public/assets/projects/:id/:style/:basename.:extension"
+  :ProjectImageth => ":rails_root/public/assets//projects/:id/:style/:basename.:extension"
 
   #Todo validation on presence
   validates_attachment :logo,# :presence => true,
@@ -14,7 +14,7 @@ class Project < ActiveRecord::Base
   :size => {:in => 0..900.kilobytes}
 
   has_attached_file :photo, :url  => "/assets/projects/:id/:style/:basename.:extension",
-  :ProjectImageth => ":rails_root/public/assets/projects/:id/:style/:basename.:extension"
+  :ProjectImageth => ":rails_root/public/assets//projects/:id/:style/:basename.:extension"
 
   #Todo validation on presence
   validates_attachment :photo,# :presence => true,

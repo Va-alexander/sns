@@ -20,7 +20,7 @@ Sns::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
-  # Defaults to Rails.root.join("public/assets")
+  # Defaults to Rails.root.join("public/assets/")
   # config.assets.manifest = YOUR_PATH
 
   # Specifies the header that your server uses for sending files

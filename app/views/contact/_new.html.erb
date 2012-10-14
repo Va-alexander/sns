@@ -1,18 +1,19 @@
+<%= notice %>
 <%= form_for message, :url => contact_path do |form| %>
   <% translated_name = t 'message.names'  %>
     <div id="message">
       <div class="leftside">
         <ul>
           <li>
-            <%= form.label "#{translated_name[0]}" %>
+            <%= form.label :name, "#{translated_name[0]}" %>
             <%= form.text_field :name %>
           </li>
           <li>
-            <%= form.label "#{translated_name[1]}"  %>
+            <%= form.label :email, "#{translated_name[1]}"  %>
             <%= form.text_field :email %>
           </li>
           <li>
-            <%= form.label "#{translated_name[2]}" %>
+            <%= form.label :subject , "#{translated_name[2]}" %>
             <%= form.text_field :subject %>
           </li>
         </ul>
@@ -21,7 +22,7 @@
     <div class="rightside">
       <ul>
         <li>
-          <%= form.label "#{translated_name[3]}" %>
+          <%= form.label :body, "#{translated_name[3]}" %>
           <%= form.text_area :body %>
         </li>
         <li>

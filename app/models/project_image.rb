@@ -8,7 +8,7 @@ class ProjectImage < ActiveRecord::Base
  has_attached_file :event_image, :styles => { :thumb => "312x260" },
  :default_style => :thumb,
  :url  => "/assets/products/:id/:style/:basename.:extension",
- :ProjectImageth => ":rails_root/public/assets/products/:id/:style/:basename.:extension"
+ :ProjectImageth => ":rails_root/public/assets//products/:id/:style/:basename.:extension"
  
  validates_attachment :event_image, :presence => true,
  :content_type => {:content_type => ["image/jpeg", "image/jpg", "image/png"]},

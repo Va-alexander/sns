@@ -5,6 +5,8 @@ Sns::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   scope ":locale", locale: /#{I18n.available_locales.join("|")}/ do
+    match 'contact' => 'contact#create', as: 'contact', via: :post
+    
     resources :projects
     resources :project_images
     root to: 'home#index'
@@ -13,8 +15,7 @@ Sns::Application.routes.draw do
   match "*path", to: redirect("/#{I18n.default_locale}/%{path}")
   match "", to: redirect("/#{I18n.default_locale}")
 
-  match 'contact' => 'contact#new', as: 'contact', via: :get
-  match 'contact' => 'contact#create', to: redirect("/"), as: 'contact', via: :post
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -196,7 +196,7 @@ The default directory structure of a generated Ruby on Rails application:
 app
   Holds all the code that's specific to this particular application.
 
-app/assets
+app/assets/
   Contains subdirectories for images, stylesheets, and JavaScript files.
 
 app/controllers
