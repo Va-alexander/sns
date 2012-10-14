@@ -3,6 +3,8 @@ uk:
   post_title: "Головна"
   pre_portfolio: "Івенти & Життя"
   send_us_message: "Залиште нам повідомлення"
+  message_notice_true: "Повідомлення відправлено."
+  message_notice_false: "Заповніть всі поля."
   message:
     names:
     - Ім’я

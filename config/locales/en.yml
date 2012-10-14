@@ -3,6 +3,8 @@ en:
   post_title: "Home"
   pre_portfolio: "Events & Life"
   send_us_message: "Send Us a Message"
+  message_notice_true: "Message was successfully sent."
+  message_notice_false: "Please fill all fields."
   message:
     names:
     - Name

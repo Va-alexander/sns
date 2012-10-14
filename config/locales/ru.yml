@@ -3,6 +3,8 @@ ru:
   post_title: "Домашняя"
   pre_portfolio: "Ивенты & Жизнь"
   send_us_message: "Оставьте нам сообщение"
+  message_notice_true: "Сообщение отправлено."
+  message_notice_false: "Пожалуйста заполните все поля."
   message:
     names:
     - Имя
