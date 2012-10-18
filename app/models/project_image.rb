@@ -1,7 +1,7 @@
 class ProjectImage < ActiveRecord::Base 
   belongs_to :project
 
-  attr_accessible :description, :name, :event_image
+  attr_accessible :description, :name, :event_image, :project_id
 
   translates :name, :description
 

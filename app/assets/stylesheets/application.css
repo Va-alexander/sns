@@ -193,13 +193,13 @@ height:53px;
   display: inline;
   margin: 0;
   padding: 0;
-  width: 977px;
+  width: 980px;
 }
 
 #main .content {
   margin: 0;
   padding: 0;
-  width: 977px;
+  width: 980px;
 }
 
 
@@ -263,13 +263,13 @@ height:53px;
   height: 260px;
 }
 .portfolio-image-left {
-  padding: 10px 10px 10px 0;
+  margin: 10px 10px 10px 0;
 }
 .portfolio-image-center {
-  padding: 10px 10px 10px 10px;
+  margin: 10px 12px 10px 12px;
 }
 .portfolio-image-right {
-  padding: 10px 0 10px 10px;
+  margin: 10px 0 10px 10px;
 }
 /**
 titles to center
@@ -357,7 +357,7 @@ h2.title a{
 }
 
 #PortfolioWrapper {
-  width: 990px;
+  width: 980px;
   float: left;
 }
 
@@ -369,7 +369,7 @@ h2.title a{
   border-bottom: solid 1px #b3b3b3;
   border-left: solid 1px #d9d9d9; 
   border-right: solid 1px #d9d9d9;
-  width:946px;
+  width:948px;
   float:left;
   padding:15px;
   margin:0 0 18px 0;
@@ -392,7 +392,7 @@ h2.title a{
 #ContactsWrapper {
   width: 980px;
   padding: 0;
-  margin: 0 0 0 -1px;
+  margin: 0;
   float: left;
   color:#f2f2f2;
   background: #333333;
