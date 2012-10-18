@@ -1,8 +1,9 @@
 <div id="main-menu">
 	<ul>
-		<%t('menu.items').each do |item| %>
-		  <li> <%= link_to "#{item}", root_path(anchor: "#{item}") %></li> 
-		  <!-- To Do Add last item class to menu items -->
-		<% end %>  
+		<li> <%= link_to (t 'menu.items')[0], root_path(anchor: "Portfolio") %></li> 
+		<li> <%= link_to (t 'menu.items')[1], root_path(anchor: "Clients") %></li> 
+		<li> <%= link_to (t 'menu.items')[2], root_path(anchor: "About") %></li> 
+		<li> <%= link_to (t 'menu.items')[3], root_path(anchor: "Services") %></li> 
+		<li class="last"> <%= link_to (t 'menu.items')[4], root_path(anchor: "Contacts") %></li> 
 	</ul>
 </div>
