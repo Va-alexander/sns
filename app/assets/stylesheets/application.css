@@ -12,9 +12,6 @@
  *= require_tree .
 */
 
-
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
-
 /* Default Style
 ------------------------------------------------*/
 html, body, div, span, object, iframe,
@@ -137,7 +134,7 @@ select {
 }
 #footer h2{
   color: #000;
-  font-family: 'Ubuntu Condensed', sans-serif;
+  font-family: sans-serif;
   font-weight: bold;
 
 }
