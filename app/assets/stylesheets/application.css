@@ -308,7 +308,7 @@ h2.title a{
   text-align: center;
   text-transform: uppercase;
   color: rgb(102, 102, 102);
-  padding: 80px 0 0 0;
+  padding: 165px 0 0 0;
 }
 
 .sticky-header th, .sticky-table th {  border-bottom: 3px solid #ccc;  padding-right: 1em;  text-align: left; }
@@ -335,13 +335,15 @@ h2.title a{
   margin: 0 auto;
   padding: 0 0 0 0;
   width: 980px;
-  height: 54px;
+  height: 139px;
   z-index: 20;
 }
 
 #headerWrapper #logo {
   float: left;
-  width: 300px;
+  text-align: right;
+  margin-top: 2px ;
+  width: 532px;
 }
 
 #ContactsTitle{
