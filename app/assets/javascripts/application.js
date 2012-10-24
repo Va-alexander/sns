@@ -15,5 +15,5 @@
 //= require_tree .
 
 $(document).ready(function(){
-	$('#main-menu').localScroll({offset:-150});
+	$('#main-menu').localScroll({offset:-170});
 });
