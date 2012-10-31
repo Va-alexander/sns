@@ -176,8 +176,19 @@ height:53px;
 
 /* Locales */
 #locales {
+  width: 102px;
+  height: 30px;
   float: right;
 }
+
+/* each flag should be 24x24 px `
+-----------------*/
+
+  #locales .flag{
+    float: left;
+    margin: 6px 0 0 0;
+    padding: 0 0 0 10px;
+  }
 
 /* content body (sidebars and main content)
 ------------------------------------------------*/
@@ -382,8 +393,69 @@ h2.title a{
 }
 
 #AboutWrapper {
+  font-size:11px; 
+  color:#666666;
 
 }
+  #SocialWrapper {  
+    width: 102px; 
+    float: left;
+    padding: 8px 0 0 15px;
+  }
+    #SocialWrapper ul {
+      padding: 0;
+      margin: 0;
+    }  
+      #SocialWrapper ul li{
+       display: block; 
+       padding: 12px 0 12px 0; 
+       list-style: none;
+      }
+
+  .newsAllRight{
+    width:819px; 
+    float:right;
+  }
+    .newsEvent{
+      width: 240px;
+      float: left;
+      padding: 10px 33px 15px 0px;
+    }
+    .newsEvent ul{ 
+      padding:0px;
+      margin:0px;
+    }
+    .newsEvent ul li{ 
+      display:block;
+      padding:0 0 25px 0;
+      list-style:none;
+    }
+    h5{ 
+      font-size:15px; 
+      color:#666666; 
+      padding:0px 0 5px 0;
+    }
+    .newsEvent .postedDate{ 
+      font-size:11px; 
+      color:#666666; 
+    }
+    .newsEvent p{ 
+      font-size:11px; 
+      color:#666666; 
+      line-height:18px ; 
+      padding: 0 0 20px 0;
+    }
+
+#ServicesWrapper{
+  font-size:11px; 
+  color:#666666;
+}
+
+#ClientsWrapper{
+  font-size:11px; 
+  color:#666666;
+}
+
 .ContentBorder {
   border-top: solid 1px #b3b3b3;
   border-bottom: solid 1px #b3b3b3;

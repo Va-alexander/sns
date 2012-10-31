@@ -15,9 +15,9 @@
     <!--Header Wrapper-->
     <div id="headerWrapper">
       <div id="locales">
-        <%= link_to_unless_current (image_tag '/assets/en_flag.jpeg'), locale: "en" %>
-        <%= link_to_unless_current (image_tag '/assets/ru_flag.jpeg'), locale: "ru" %>
-        <%= link_to_unless_current (image_tag '/assets/ua_flag.jpeg'), locale: "uk" %>
+        <div class="flag"> <%= link_to_unless_current (image_tag '/assets/uk_flag.jpg'), locale: "en" %> </div>
+        <div class="flag"> <%= link_to_unless_current (image_tag '/assets/ru_flag.jpg'), locale: "ru" %> </div>
+        <div class="flag"> <%= link_to_unless_current (image_tag '/assets/ua_flag.jpg'), locale: "uk" %> </div>
       </div>
       <!--Logo Section-->
       <div id="logo"> 

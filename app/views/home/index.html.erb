@@ -31,20 +31,8 @@
 
     <h2 class="title"><a name="About"><%= (t 'menu.items')[2] %></a></h2>
     <div class="underline-title"> <%= image_tag '/assets/grey_line.jpg' %> </div>
-    <div id="AboutWrapper" class="ContentBorder">
-       <div class="left">
-       <!-- Longer page -->
-       <% for i in 1..12 do %>
-          <ul>Lorem Ipsum</ul>
-        <% end %>
-      </div>
-      <div class="right">
-       <!-- Longer page -->
-       <% for i in 1..12 do %>
-          <ul>Lorem Ipsum</ul>
-        <% end %>
-      </div>
-    </div>
+    <%= render 'about_part'%>
+    
     <h2 class="title"><a name="Services"><%= (t 'menu.items')[3] %></a></h2>
     <div class="underline-title"> <%= image_tag '/assets/grey_line.jpg' %> </div>
     <div id="ServicesWrapper" class="ContentBorder">
