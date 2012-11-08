@@ -20,14 +20,7 @@
 
     <h2 class="title" ><a name="Clients"><%= (t 'menu.items')[1] %></a></h2>
     <div class="underline-title"> <%= image_tag '/assets/grey_line.jpg' %> </div>
-    <div id="ClientsWrapper" class="ContentBorder">
-      <div class="left">
-       <!-- Longer page -->
-       <% for i in 1..12 do %>
-          <ul>Lorem Ipsum</ul>
-        <% end %>
-      </div>
-    </div> 
+    <%= render 'clients_part'%>
 
     <h2 class="title"><a name="About"><%= (t 'menu.items')[2] %></a></h2>
     <div class="underline-title"> <%= image_tag '/assets/grey_line.jpg' %> </div>
@@ -49,6 +42,7 @@
         <% end %>
       </div>
     </div>
+    
     <div id="ContactsWrapper">
     <h2 id="ContactsTitle"><a name="Contacts"><%= (t 'menu.items')[4] %></a></h2>
     <div class="underline-title"> <%= image_tag '/assets/grey_line.jpg' %> </div>

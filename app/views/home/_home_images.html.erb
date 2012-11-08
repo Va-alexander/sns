@@ -4,10 +4,25 @@
   <% div_counter = 1 if div_counter > 3 %>
   <% case div_counter %>
   <% when 1 %>
-    <div class="portfolio-image-holder portfolio-image-left"> <%= image_tag project_image.event_image.url(:thumb) %></div>
+    <div class="portfolio-image-holder portfolio-image-left"> <%= image_tag project_image.event_image.url(:thumb) %>
+      <div class="portfolio-text-bg">
+        <p class="portfolio-image-title"><%= project_image.name %></p>
+        <p class="portfolio-image-content"><%= project_image.description %></p>        
+      </div>
+    </div>
   <% when 2 %>
-    <div class="portfolio-image-holder portfolio-image-center"> <%= image_tag project_image.event_image.url(:thumb) %></div>
+    <div class="portfolio-image-holder portfolio-image-center"> <%= image_tag project_image.event_image.url(:thumb) %>
+      <div class="portfolio-text-bg">
+        <p class="portfolio-image-title"><%= project_image.name %></p>
+        <p class="portfolio-image-content"><%= project_image.description %></p>
+      </div>
+    </div>
   <% when 3 %>
-    <div class="portfolio-image-holder portfolio-image-right"> <%= image_tag project_image.event_image.url(:thumb) %></div>
+    <div class="portfolio-image-holder portfolio-image-right"> <%= image_tag project_image.event_image.url(:thumb) %>
+      <div class="portfolio-text-bg">
+        <p class="portfolio-image-title"><%= project_image.name %></p>
+        <p class="portfolio-image-content"><%= project_image.description %></p>
+      </div>
+    </div>
   <% end %>
 <% end %>
